@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    div#divA {
+        font-size: 20pt;
+        color: aliceblue;
+        background: black;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+</style>
+
+</head>
+<body>
+
+<script>
+    function interact(mouseAction){
+        let divA = window.document.querySelector('div#divA')
+        if (mouseAction == 'onclick') {
+            divA.style.color = 'blue'
+            divA.style.background = 'yellow'
+        }
+        if(mouseAction == 'onmouseenter'){
+            divA.style.color = 'black'
+            divA.style.background = 'green'}
+        if(mouseAction == 'onmouseleave'){
+        divA.style.color = 'white'
+        divA.style.background = 'black'}   
+    }
+</script>
+
+    <div id="divA" onclick="interact('onclick')" onmouseenter="interact('onmouseenter')" 
+    onmouseleave="interact('onmouseleave')">
+        Interact
+    </div>
+</body>
+</html>

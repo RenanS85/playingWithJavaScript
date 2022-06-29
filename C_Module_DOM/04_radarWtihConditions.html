@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function verifySpeed(){
+            let spd = document.getElementById('spd').value
+            let w = document.querySelector('div')
+            w.innerHTML += `<p>Your actual speed is ${spd}<p>`
+            if (spd > 70) {
+            w.innerHTML += '<p>You are fined</p>' 
+            w.innerHTML+= '<p>Drive safe</p>'
+            }
+            else{
+                w.innerHTML += '<p>You are ok</p>' 
+            w.innerHTML+= '<p>Keep this way</p>'
+            }
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <div>
+    <h1>Type your speed</h1>
+    <input id = 'spd' type="number" maxlength="50" placeholder="Speed (km/h)"><button onclick="verifySpeed()">Verify</button>
+    </div>  
+</body>
+</html>

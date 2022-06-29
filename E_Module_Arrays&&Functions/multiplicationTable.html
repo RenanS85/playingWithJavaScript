@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./functions.js"></script>
+</head>
+<body onload="fullDate()">
+    <section id = 'box'>
+        <div>
+            <p id="todayDate"></p>
+              <p><label for="num">Numbe (1 to 100): </label><input id ='num' type="number" > 
+                <button id="generate" onclick='createList(numbers)'>Genarate</button></p>
+        </div>
+        <div>
+        <p><select id="list">
+            </select>
+            <button id ='analize' onclick='anal(numbers)'>Analize</button></p>
+        </div>
+        <div id="analizes">
+
+        </div>
+
+    </section>
+    
+</body>
+</html>

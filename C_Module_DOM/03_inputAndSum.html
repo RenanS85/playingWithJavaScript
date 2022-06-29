@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {padding: 20px;
+        margin: 20px;
+        margin-left: 60px;
+    font-size: 15pt;}
+    
+    </style>
+
+<script>
+
+function sum(){
+let n1 = parseFloat(document.getElementById('n1').value)
+let n2 = parseFloat(document.getElementById('n2').value)
+let sum = n1+n2
+document.getElementById('sum').innerText = `The sum is ${sum}`
+}
+
+</script>
+
+
+</head>
+<body>
+    <div>
+        <h1>Nº</h1><br><input type="number" id="n1" maxlength="20" placeholder="type a number">
+        <br>
+        <h1>Nº</h1><br><input type="number" id="n2" maxlength="20" placeholder="type a number">
+        <br>
+        <button onclick="sum()">Click to sum</button><br>
+        <h1 id="sum">Result appears here</h1>
+    </div>
+</body>
+</html>

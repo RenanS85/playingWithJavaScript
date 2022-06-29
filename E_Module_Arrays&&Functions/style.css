@@ -1,0 +1,55 @@
+body {font-family: sans-serif;
+font-weight: bold;
+background: rgba(23, 131, 131, 0.848);}
+
+section#box {
+    background: wheat;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin: 200px 300px 200px 300px;
+    box-shadow: 1px 1px 5px;
+}
+
+input{
+    border-radius: 5px;
+    font-family: sans-serif;
+    padding: 5px 10px 5px 10px;
+}
+
+button#generate {
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 85px 5px 85px ;
+    font-size: 13pt;
+}
+
+button#analize {
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 58px 5px 58px ;
+    font-size: 13pt;
+    margin-top: 10px;
+ 
+}
+
+
+h2#message {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+select#list {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 145px;
+    padding: 5px 69px 5px 85px ;
+    border-radius: 7px;
+    border: solid 1.7px black;
+    box-shadow: 1px 1px 4px;
+}

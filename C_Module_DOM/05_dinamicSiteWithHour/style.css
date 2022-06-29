@@ -1,0 +1,33 @@
+header {
+    margin-top: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    background: rgba(220, 220, 42, 0.883);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+section#box {
+    text-align: center;
+    width:500px ;
+    background: whitesmoke;
+    border: solid whitesmoke 10px;
+    border-radius: 20px;
+    margin: 10px 200px 50px 410px;
+    box-shadow: .5px 1px 7px;
+}
+
+section#box div#datetime {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section#box div#image img#img {
+    height: 300px;
+    width: 300px;
+    border: solid white;
+    border-radius: 200px;}
+    

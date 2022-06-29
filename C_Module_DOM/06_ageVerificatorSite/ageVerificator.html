@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./functions.js"></script>
+</head>
+<body onload="fullDate()">
+    <section id = 'box'>
+        <div>
+            <form>
+               <p id="todayDate"></p>
+                <p><label for="birthday">Birthday: </label><input id="birthday" type="date"></p>
+                <p>
+                Sex: <label for="M">Male</label><input name="sex" id="M" type="radio">
+                <label for="F">Female</label><input name ="sex" id="F" type="radio">
+                </p>
+            </form>
+        </div>
+        <div>
+            <button onclick="age();sex()">Verify</button>
+            <h2 id = 'message'></h2>
+            <img id ='sexImg'>
+            <img id="ballon">
+        </div>
+
+    </section>
+    
+</body>
+</html>
